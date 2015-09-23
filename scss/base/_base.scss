@@ -1,0 +1,55 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100%;
+  font-family: $font-family--primary;
+  background-color: $color-primary;
+  background: url(../img/Australia.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+  /* Margin bottom by footer height */
+  margin-bottom: 0px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family--primary;
+  color: $color-secondary;
+}
+
+p {
+  font-family: $font-family--secondary;
+  color: $color-light;
+}
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+  margin: 20px 0;
+}
+
+

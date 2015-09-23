@@ -1,0 +1,68 @@
+// ==========================================================================
+// Navbar Styles
+// ==========================================================================
+
+
+
+//Bootstrap Masthead styles
+
+.masthead {
+
+    &-brand {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: $color-light;
+
+        @media screen and (min-width: $break-small) {
+            float: left;
+        }
+    }
+
+    &-nav { 
+
+        & > li {
+            display: inline-block;
+            background-color: transparent;
+
+            & + li {
+              margin-left: 20px;
+            }
+
+            & > a {
+              padding-right: 0;
+              padding-left: 0;
+              font-size: 16px;
+              font-weight: bold;
+              color: $color-light;
+
+                & > i {
+                    font-size: 1.5em;
+                }
+
+                &:hover, &:focus {
+                    background-color: transparent;
+                    color: $color-secondary;
+                }  
+            } // > a
+        } // > li
+
+        & > .active > a,
+        & > .active > a:hover,
+        & > .active > a:focus {
+            color: $color-light;
+        }
+
+            @media screen and (min-width: $break-small) {
+                float: right;
+            } 
+    }    
+}
+
+
+
+
+
+
+
+
+

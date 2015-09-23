@@ -1,0 +1,105 @@
+// ==========================================================================
+// Section Styles
+// ==========================================================================
+
+
+.cover {
+  padding: 0 20px;
+
+  	&-container {
+	  margin-right: auto;
+	  margin-left: auto;
+
+	  	@media screen and (min-width: $break-small) {
+			width: 100%; /* Must be percentage or pixels for horizontal alignment */
+		}	
+
+		// @media screen and (min-width: $break-medium) {
+		// 	width: 700px;
+		// }
+	}
+
+  	.btn-lg {
+	  padding: 10px 20px;
+	  font-weight: bold;
+	  background-color: transparent;
+	  color: $color-light;
+	  border-color: $color-light;
+
+	  	&:hover {
+	  		background-color: $color-secondary;
+	  	}
+	}
+}
+
+.site-wrapper {
+  	display: table;
+  	width: 100%;
+  	height: 100%; /* For at least Firefox */
+  	min-height: 100%;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  			box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
+  		&-inner {
+		  display: table-cell;
+		  vertical-align: top;
+
+		  	@media screen and (min-width: $break-small) {
+		  		 /* Start the vertical centering */
+		  		vertical-align: middle;
+		  	}
+		}
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 1.5em em(80px);
+
+  	@media screen and (min-width: $break-small) {
+	  	padding: em(50px) em(80px);
+	}
+
+  	&.cover {
+
+  		h2 {
+  			color: $color-light;
+  			font-size: 1.8em;
+  		}
+
+  		@media screen and (min-width: $break-small) {
+	  		 padding: 0 25%;
+	  	}
+
+  	}
+}
+
+.masthead {
+	
+	@media screen and (min-width: $break-small) {
+		/* Pull out the header and footer */
+		position: fixed;
+    	top: 0;
+    	width: 100%;
+	}
+
+	// @media screen and (min-width: $break-medium) {
+	// 	width: 700px;
+	// }
+}
+
+//Translucent background to make sure quotes are readable
+
+.highlight {
+	background-color: rgba(78, 84, 91,.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+  
+ 
+  
+ 

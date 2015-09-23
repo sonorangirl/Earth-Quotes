@@ -1,0 +1,12 @@
+// ==========================================================================
+// Icon Styles
+// ==========================================================================
+
+.wide-tooltip + .tooltip > .tooltip-inner {
+	background-color: $color-secondary;
+	width: 100px;
+}
+
+.wide-tooltip + .tooltip > .tooltip-arrow { 
+	border-bottom-color: $color-secondary; 
+}

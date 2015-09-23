@@ -1,0 +1,95 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300|Biryani:300|Habibi';
+$font-family--primary    : 'Fjalla One', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Poppins', sans-serif;
+
+// Font Weights
+
+// $font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+// $font-weight--ultra-bold : 900;
+
+// Descriptive Base Colors
+
+$Fern: #5FB772; //rgba(95, 183, 114, 100);
+$AbbeyGrey: #4E545B; //rgba(78, 84, 91, 100);
+$Alabaster: #EDF2ED; //rgba(237, 242, 237, 100);
+
+// Color Usage
+
+$color-primary   : $Fern;
+$color-secondary : $AbbeyGrey;
+$color-light     : $Alabaster;
+$color-shadow    : rgba($AbbeyGrey, .2);
+
+// Color Palette Modifiers
+
+// $color-palettes: (
+// 	darkTeal: (
+// 		xx-light : lighten($DeepSeaGreen, 43%),
+// 		x-light  : lighten($DeepSeaGreen, 35%),
+// 	  	light    : lighten($DeepSeaGreen, 12%),
+// 	  	base     : $DeepSeaGreen,
+// 	 	dark     : darken($DeepSeaGreen, 8%),
+// 	 	x-dark   : darken($DeepSeaGreen, 16%)
+// 	)
+// );
+
+// UI Colors
+
+// $ui-colors: (
+// 	default : $fountain-blue,
+// 	success : $emerald,
+// 	error   : $sunglo,
+// 	warning : $coral,
+// 	info    : $purple-majesty
+// );
+
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : 5px;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../img";
+
+
+//Breakpoints from Bootstrap
+
+/* Small devices (tablets, 768px and up) */
+$break-small	: 768px;
+
+/* Medium devices (desktops, 992px and up) */
+$break-medium	: 992px;
+
+/* Large devices (large desktops, 1200px and up) */
+$break-large	: 1200px;
+
+
+
+
+
+
+
+
+
+

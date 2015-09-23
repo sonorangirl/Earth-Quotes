@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@sonoran_girl">
+        <meta name="twitter:title" content="Earth Quotes">
+        <meta name="twitter:description" content="'Not all those who wander are lost.' -J.R.R. Tolkien. Location: Peedamulla, Australia" >
+        <meta name="twitter:image" content="http://sitename/img/Australia.jpg">
+
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <title>Earth Quotes</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this project -->
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">Earth Quotes</h3>
+                            <nav>
+                                <ul class="nav masthead-nav">
+                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="About this Project" href="#"><i class="fa fa-info-circle"></i></a></li>
+                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="Tweet this Quote" href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="View project on Github" href="#"><i class="fa fa-github"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="inner cover">
+                        <div class="highlight">
+                            <h2 id ="quote" class="cover-heading">Not all those who wander are lost.</h2>
+                            <p id="speaker" class="lead">-J.R.R. Tolkien</p>
+                            <p class="lead">
+                              <a href="#" id="quote-button" class="btn btn-lg btn-default">View Another</a>
+                            </p>
+                        </div>
+                    </div> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <!-- <p class="pull-left text-muted">A project by <a href="">Erin Manahan</a></p> -->
+                <p id="location" class="pull-left text-muted">Peedamulla, Australia</p>
+                <p class="pull-right text-muted">Images from <a href="">Earth View</a></p>
+            </div>
+        </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/quotes.js"></script>
+
+    <script>
+
+        $( document ).ready(function() {
+    
+            $('#quote-button').click(function() {
+                getNewQuote();
+            });
+        
+            $('[data-toggle="tooltip"]').tooltip();
+       });
+
+    </script>
+        
+    </script>
+  </body>
+</html>
