@@ -19,7 +19,7 @@ body {
   height: 100%;
   font-family: $font-family--primary;
   background-color: $color-primary;
-  background: url(../img/Australia.jpg) no-repeat center center fixed; 
+  background: url(../img/google-earth-view-Orhangazi-Turkey.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,5 +51,18 @@ body > .container-fluid {
 .container-fluid .text-muted {
   margin: 20px 0;
 }
+
+//Get rid of bootstrap link/button outline after click
+.btn:focus, a:focus {
+    outline: none !important
+}
+
+
+
+
+
+
+
+
 
 

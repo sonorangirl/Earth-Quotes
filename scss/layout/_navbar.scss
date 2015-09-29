@@ -41,8 +41,36 @@
 
                 &:hover, &:focus {
                     background-color: transparent;
-                    color: $color-secondary;
+                }
+
+                & > i.about {
+                  
+                    &:hover, &:focus {
+                      color: $color-primary;
+                    }
                 }  
+
+                & > i.tweet {
+                  
+                    &:hover, &:focus {
+                      color: $DarkBlue;
+                    }
+                }
+
+                & > i.github {
+                  
+                    &:hover, &:focus {
+                      color: purple;
+                    }
+                }
+
+                & > i.contact {
+                  
+                    &:hover, &:focus {
+                      color: $DarkBrown;
+                    }
+                }      
+
             } // > a
         } // > li
 

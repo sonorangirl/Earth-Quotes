@@ -1,0 +1,65 @@
+// ==========================================================================
+// Tooltip Styles
+// ==========================================================================
+
+// .wide-tooltip + .tooltip > .tooltip-inner {
+// 	background-color: $color-primary;
+// 	width: 100px;
+// }
+
+// .wide-tooltip + .tooltip > .tooltip-arrow { 
+// 	border-bottom-color: $color-primary; 
+// }
+
+.wide-tooltip {
+
+	& + .tooltip > .tooltip-inner {
+		width: 100px;
+
+		.about & {
+			background-color: $color-primary;
+		}
+
+		.tweet & {
+			background-color: $DarkBlue;
+		}
+
+		.github & {
+			background-color: purple;
+		}
+
+		.contact & {
+			background-color: $DarkBrown;
+		}
+	}
+
+
+	& + .tooltip > .tooltip-arrow {
+		
+		.about & {
+			border-bottom-color: $color-primary;
+		}
+
+		.tweet & {
+			border-bottom-color: $DarkBlue;
+		}
+
+		.github & {
+			border-bottom-color: purple;
+		}
+
+		.contact & {
+			border-bottom-color: $DarkBrown;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+// ==========================================================================
+// Modal Styles
+// ==========================================================================
+
+.modal-content {
+	background-color: $color-light;
+
+	p {
+		color: $color-secondary;
+	}
+
+	a {
+		color: $color-primary;
+	}
+
+	.modal-footer button {
+		background-color: $color-primary;
+		color: $color-light;
+	}
+}

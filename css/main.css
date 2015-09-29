@@ -53,7 +53,7 @@ body {
   height: 100%;
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
   background-color: #5FB772;
-  background: url(../img/Australia.jpg) no-repeat center center fixed;
+  background: url(../img/google-earth-view-Orhangazi-Turkey.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,6 +82,9 @@ body > .container-fluid {
 .container-fluid .text-muted {
   margin: 20px 0; }
 
+.btn:focus, a:focus {
+  outline: none !important; }
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -103,8 +106,15 @@ body > .container-fluid {
     .masthead-nav > li > a > i {
       font-size: 1.5em; }
     .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
-      background-color: transparent;
-      color: #4E545B; }
+      background-color: transparent; }
+    .masthead-nav > li > a > i.about:hover, .masthead-nav > li > a > i.about:focus {
+      color: #5FB772; }
+    .masthead-nav > li > a > i.tweet:hover, .masthead-nav > li > a > i.tweet:focus {
+      color: #55acee; }
+    .masthead-nav > li > a > i.github:hover, .masthead-nav > li > a > i.github:focus {
+      color: purple; }
+    .masthead-nav > li > a > i.contact:hover, .masthead-nav > li > a > i.contact:focus {
+      color: #2D271D; }
 .masthead-nav > .active > a, .masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
   color: #EDF2ED; }
 @media screen and (min-width: 768px) {
@@ -188,11 +198,33 @@ body > .container-fluid {
         text-decoration: none; }
 
 .wide-tooltip + .tooltip > .tooltip-inner {
-  background-color: #4E545B;
   width: 100px; }
+  .about .wide-tooltip + .tooltip > .tooltip-inner {
+    background-color: #5FB772; }
+  .tweet .wide-tooltip + .tooltip > .tooltip-inner {
+    background-color: #55acee; }
+  .github .wide-tooltip + .tooltip > .tooltip-inner {
+    background-color: purple; }
+  .contact .wide-tooltip + .tooltip > .tooltip-inner {
+    background-color: #2D271D; }
+.about .wide-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #5FB772; }
+.tweet .wide-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #55acee; }
+.github .wide-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: purple; }
+.contact .wide-tooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #2D271D; }
 
-.wide-tooltip + .tooltip > .tooltip-arrow {
-  border-bottom-color: #4E545B; }
+.modal-content {
+  background-color: #EDF2ED; }
+  .modal-content p {
+    color: #4E545B; }
+  .modal-content a {
+    color: #5FB772; }
+  .modal-content .modal-footer button {
+    background-color: #5FB772;
+    color: #EDF2ED; }
 
 @media print {
   * {

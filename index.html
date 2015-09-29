@@ -9,11 +9,13 @@
         <meta name="author" content="">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@sonoran_girl">
-        <meta name="twitter:title" content="Earth Quotes">
-        <meta name="twitter:description" content="'Not all those who wander are lost.' -J.R.R. Tolkien. Location: Peedamulla, Australia" >
-        <meta name="twitter:image" content="http://sitename/img/Australia.jpg">
+        <meta property="og:url" content="http://" />
+        <meta property="og:title" content="Earth Quotes">
+        <meta property="og:description" content="'The Earth is what we all have in common.' -Wendell Berry. Location: Orhangazi, Turkey">
+        <meta property="og:image" content="http://sitename/img/google-earth-view-Orhangazi-Turkey.jpg" />
+        
 
-        <link rel="icon" href="../../favicon.ico">
+        <link rel="icon" href="img/world.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
         <title>Earth Quotes</title>
@@ -38,19 +40,36 @@
                             <h3 class="masthead-brand">Earth Quotes</h3>
                             <nav>
                                 <ul class="nav masthead-nav">
-                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="About this Project" href="#"><i class="fa fa-info-circle"></i></a></li>
-                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="Tweet this Quote" href="#"><i class="fa fa-twitter"></i></a></li>
-                                  <li><a class="wide-tooltip" data-toggle="tooltip" data-placement="bottom" title="View project on Github" href="#"><i class="fa fa-github"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                  <li class="about"><a class="wide-tooltip" data-toggle="modal" data-target="#infoModal" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="About this Project" href="#"><i class="fa fa-info-circle about"></i></a></li>
+                                  <li class="tweet"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Tweet this Quote" href="https://twitter.com/intent/tweet"><i class="fa fa-twitter tweet"></i></a></li>
+                                  <li class="github"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="View project on Github" href="#"><i class="fa fa-github github"></i></a></li>
+                                  <li class="contact"><a class="wide-tooltip" data-toggle="modal" data-target="#contactModal" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Contact" href="#"><i class="fa fa-envelope contact"></i></a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
 
+                    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">About Earth Quotes</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Earth Quotes is a project made for <a href="http://www.freecodecamp.com">freeCodeCamp</a>. The quotes featured are all about sustainability and conservation to protect the Earth and it's amazing natural landscapes, as well as just travelling, exploring, and enjoying the planet we call home.  The images featured are from Google's <a href="https://earthview.withgoogle.com/">Earth Views</a> project, which is a collection of some of the most beautiful Google Earth images.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="inner cover">
                         <div class="highlight">
-                            <h2 id ="quote" class="cover-heading">Not all those who wander are lost.</h2>
-                            <p id="speaker" class="lead">-J.R.R. Tolkien</p>
+                            <h2 id ="quote" class="cover-heading">The Earth is what we all have in common.</h2>
+                            <p id="speaker" class="lead">-Wendell Berry</p>
                             <p class="lead">
                               <a href="#" id="quote-button" class="btn btn-lg btn-default">View Another</a>
                             </p>
@@ -66,8 +85,8 @@
         <footer class="footer">
             <div class="container">
                 <!-- <p class="pull-left text-muted">A project by <a href="">Erin Manahan</a></p> -->
-                <p id="location" class="pull-left text-muted">Peedamulla, Australia</p>
-                <p class="pull-right text-muted">Images from <a href="">Earth View</a></p>
+                <p id="location" class="pull-left text-muted">Orhangazi, Turkey</p>
+                <p class="pull-right text-muted">Images from <a href="https://earthview.withgoogle.com/">Earth View</a></p>
             </div>
         </footer>
 
@@ -87,11 +106,29 @@
                 getNewQuote();
             });
         
-            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-hover="tooltip"]').tooltip();
        });
 
     </script>
         
+    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+    
+    <script>window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+         
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+         
+          return t;
+        }(document, "script", "twitter-wjs"));
     </script>
   </body>
 </html>
