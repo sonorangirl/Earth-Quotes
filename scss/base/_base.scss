@@ -24,7 +24,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: background-image 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
   /* Margin bottom by footer height */
   margin-bottom: 0px;
   text-align: center;
