@@ -9,10 +9,10 @@
         <meta name="author" content="">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@sonoran_girl">
-        <meta property="og:url" content="http://" />
+        <meta property="og:url" content="http://sonorangirl.github.io/Earth-Quotes/#">
         <meta property="og:title" content="Earth Quotes">
-        <meta property="og:description" content="'The Earth is what we all have in common.' -Wendell Berry. Location: Orhangazi, Turkey">
-        <meta property="og:image" content="http://sitename/img/google-earth-view-Orhangazi-Turkey.jpg" />
+        <meta property="og:description" content="Location: Orhangazi, Turkey">
+        <meta property="og:image" content="http://sonorangirl.github.io/Earth-Quotes/img/google-earth-view-Orhangazi-Turkey.jpg" />
         
 
         <link rel="icon" href="img/world.ico">
@@ -41,8 +41,8 @@
                             <nav>
                                 <ul class="nav masthead-nav">
                                   <li class="about"><a class="wide-tooltip" data-toggle="modal" data-target="#infoModal" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="About this Project" href="#"><i class="fa fa-info-circle about"></i></a></li>
-                                  <li class="tweet"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Tweet this Quote" href="https://twitter.com/intent/tweet"><i class="fa fa-twitter tweet"></i></a></li>
-                                  <li class="github"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="View project on Github" href="#"><i class="fa fa-github github"></i></a></li>
+                                  <li class="tweet"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Tweet this Quote" href="http://twitter.com/intent/tweet?status='The Earth is what we all have in common.'  -Wendell Berry" target="_blank"><i class="fa fa-twitter tweet"></i></a></li>
+                                  <li class="github"><a class="wide-tooltip" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="View project on Github" href="https://github.com/sonorangirl/Earth-Quotes"><i class="fa fa-github github"></i></a></li>
                                   <li class="contact"><a class="wide-tooltip" data-toggle="modal" data-target="#contactModal" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Contact" href="#"><i class="fa fa-envelope contact"></i></a></li>
                                 </ul>
                             </nav>
@@ -58,6 +58,23 @@
                           </div>
                           <div class="modal-body">
                             <p>Earth Quotes is a project made for <a href="http://www.freecodecamp.com">freeCodeCamp</a>. The quotes featured are all about sustainability and conservation to protect the Earth and it's amazing natural landscapes, as well as just travelling, exploring, and enjoying the planet we call home.  The images featured are from Google's <a href="https://earthview.withgoogle.com/">Earth Views</a> project, which is a collection of some of the most beautiful Google Earth images.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Contact</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>This project was created by Erin Manahan for <a href="http://www.freecodecamp.com">freeCodeCamp</a>. You can contact Erin at manahan.erin@gmail.com or on <a href="https://twitter.com/sonoran_girl"><i class="fa fa-twitter"></i> Twitter</a></p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,39 +113,29 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
     <script src="js/quotes.js"></script>
 
+
     <script>
+
 
         $( document ).ready(function() {
     
             $('#quote-button').click(function() {
                 getNewQuote();
+                twttr.widgets.load();
             });
         
             $('[data-hover="tooltip"]').tooltip();
+
        });
 
     </script>
-        
-    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
     
-    <script>window.twttr = (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-          if (d.getElementById(id)) return t;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
-         
-          t._e = [];
-          t.ready = function(f) {
-            t._e.push(f);
-          };
-         
-          return t;
-        }(document, "script", "twitter-wjs"));
-    </script>
+    
+
   </body>
 </html>
+

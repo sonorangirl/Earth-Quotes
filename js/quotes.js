@@ -599,9 +599,13 @@ function getNewQuote() {
 	var imageHTML = random.image;
 	var locationHTML = random.where;
 
-	// document.getElementById('quote').innerHTML = quoteHTML;
-	// document.getElementById('speaker').innerHTML = authorHTML;
-	// document.body.style.background = "url(img/" + imageHTML + ") no-repeat center center fixed";
+	//For changing Twitter quote source
+	var baseTweet = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fsonorangirl.github.io%2FEarth-Quotes%2F%23&text=";
+	var newText = "'" + quoteHTML + "' " + authorHTML;
+	var encoded = encodeURI(newText);
+	var customTweet = baseTweet += encoded;
+
+	
 	
 	$(document).ready(function() {
 		$('#quote').fadeOut(800, function(){ $('#quote').html(quoteHTML).fadeIn(800); });
@@ -609,10 +613,18 @@ function getNewQuote() {
 		$('#location').fadeOut(800, function(){ $('#location').html(locationHTML).fadeIn(800); });
 
 		$('body').css('background', 'url(img/' + imageHTML + ') no-repeat center center fixed');
+
+		$('meta[property="og:description"]').attr('content', 'Location: ' + locationHTML);
+		$('meta[property="og:image"]').attr('content', 'http://sonorangirl.github.io/Earth-Quotes/img/' + imageHTML);
+
+		
+		$('.tweet > a').attr('href', customTweet);
+
 	});
 
-
 }
+
+
 
 
 
