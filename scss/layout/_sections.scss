@@ -64,6 +64,10 @@
   		h2 {
   			color: $color-light;
   			font-size: 1.8em;
+
+  			@media screen and (max-width: $break-small) {
+  				font-size: 1.4em;
+  			}
   		}
 
   		@media screen and (min-width: $break-small) {
